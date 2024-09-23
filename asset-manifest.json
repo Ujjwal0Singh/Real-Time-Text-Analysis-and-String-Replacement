@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Real-Time-Text-Analysis-and-String-Replacement/static/css/main.dc4a29f4.css",
+    "main.js": "/Real-Time-Text-Analysis-and-String-Replacement/static/js/main.f0cac836.js",
+    "static/js/453.886638aa.chunk.js": "/Real-Time-Text-Analysis-and-String-Replacement/static/js/453.886638aa.chunk.js",
+    "index.html": "/Real-Time-Text-Analysis-and-String-Replacement/index.html",
+    "main.dc4a29f4.css.map": "/Real-Time-Text-Analysis-and-String-Replacement/static/css/main.dc4a29f4.css.map",
+    "main.f0cac836.js.map": "/Real-Time-Text-Analysis-and-String-Replacement/static/js/main.f0cac836.js.map",
+    "453.886638aa.chunk.js.map": "/Real-Time-Text-Analysis-and-String-Replacement/static/js/453.886638aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc4a29f4.css",
+    "static/js/main.f0cac836.js"
+  ]
+}
