@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+Real-Time Text Analysis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based web app that provides real-time statistics about text input. The app features a dynamic particle background and various text analysis functionalities such as counting unique words, characters excluding spaces and punctuation, and real-time string replacement.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+Real-time Text Analysis: Analyze the text as you type.
+Unique Word Count: Count unique words case-insensitively.
+Character Count: Count characters excluding spaces and punctuation.
+Dynamic String Replacement: Replace a specific string with another in real-time.
+Responsive and Stylish UI: Fully responsive design with an attractive heading, animated text, and clean layout.
 
-### `npm start`
+Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React: JavaScript library for building user interfaces.
+CSS Animations: For stylish text and heading animations.
+JavaScript: Text processing and manipulation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation and Setup
 
-### `npm test`
+Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before you begin, ensure you have met the following requirements:
 
-### `npm run build`
+Node.js: Install the latest stable version of Node.js and npm.
+Installation
+Clone the repository:
+git clone https://github.com/Ujjwal0Singh/Real-Time-Text-Analysis-and-String-Replacement.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+cd repo-name
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install dependencies:
 
-### `npm run eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Run the app:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This will start the React app on http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Usage
 
-## Learn More
+*Type or paste any text in the provided textarea.
+*Real-time Analysis will display:
+    Unique word count (case-insensitive).
+    Character count excluding spaces and punctuation.
+*Use the Search and Replace inputs to find and replace text dynamically.
+*Click the Replace All button to replace all occurrences of the searched string.
+*The replaced words will be highlighted.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Customization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Modify styling and animations in the App.css file to suit your design preferences.
 
-### Code Splitting
+Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+react
 
-### Analyzing the Bundle Size
+To install all dependencies, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm install
+Contributing
+Contributions are welcome! Please follow these steps:
 
-### Making a Progressive Web App
+Fork the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Create a new branch (git checkout -b feature/AmazingFeature).
+Commit your changes (git commit -m 'Add some AmazingFeature').
+Push to the branch (git push origin feature/AmazingFeature).
+Open a pull request.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
