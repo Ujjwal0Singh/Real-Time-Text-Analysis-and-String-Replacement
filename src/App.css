@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  background-color: #fff;
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.2s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  color: #ff6f61;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background: linear-gradient(90deg, #ff6f61, #f7c331, #008cba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s ease-in-out infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0%;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    background-position: 200%;
+  }
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #ff6f61, #f7c331, #008cba);
+  bottom: -10px;
+  left: 0;
+  animation: borderAnimation 3s infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 200px;
+  font-size: 1.2rem;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #008cba;
+  box-shadow: 0 4px 15px rgba(0, 140, 186, 0.4);
+}
+
+.stats {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+  background-color: #f7f7fa;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats p {
+  margin: 0;
+}
+
+/* Replacement Inputs */
+.replacement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.replacement input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 45%;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.replacement input:focus {
+  border-color: #008cba;
+}
+
+.replacement button {
+  background-color: #008cba;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.replacement button:hover {
+  background-color: #005f80;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 95, 128, 0.3);
+}
+
+.replacement button:active {
+  transform: translateY(1px);
+}
+
+.highlightedText {
+  background-color: #f7f7fa;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  min-height: 100px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlightedText mark {
+  background-color: yellow;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+
+  .stats, .replacement {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .replacement input, .replacement button {
+    width: 100%;
+  }
+
+  textarea {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    font-size: 1rem;
+  }
+
+  .stats {
+    font-size: 1rem;
   }
 }
